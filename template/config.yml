@@ -1,10 +1,10 @@
 site:
-    title: "纸小墨官方博客"
-    subtitle: "构建只为纯粹书写的博客"
+    title: "OTZephyr"
+    subtitle: "生活不止眼前的代码，还有老婆和孩子"
     limit: 10
     theme: theme
     lang: zh-cn
-    url: "http://www.chole.io/blog"
+    url: "https://zephyrjung.github.io/"
     comment: username
     logo: "-/images/avatar.png"
     # link: "{category}/{year}/{month}/{day}/{title}.html"
@@ -13,8 +13,8 @@ site:
 
 authors:
     me:
-        name: "纸小墨"
-        intro: "构建只为纯粹书写的博客"
+        name: "Zephyr Jung"
+        intro: "A Poorgrammer"
         avatar: "-/images/avatar.png"
 
 build:
