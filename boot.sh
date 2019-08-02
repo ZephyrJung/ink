@@ -1,14 +1,17 @@
 #!/bin/bash
-WORK_PATH="/Users/yu.zhang/Documents/GoSpace/ink"
+WORK_PATH="/Users/yu.zhang/Documents/GithubSpace/ink"
 SOURCE_PATH="/Users/yu.zhang/Documents/GithubSpace/MarkSpace"
 PUBLISH_PATH="/Users/yu.zhang/Documents/GithubSpace/zephyrjung.github.io"
 
-function getPublicFiles() {
-    flist=$(find $SOURCE_PATH -name '*.md')
-    for f in $flist
-    do
-      echo $f
-    done
-}
+publicFiles=$(find $SOURCE_PATH -name '*.md' | grep '.public.md')
 
-getPublicFiles $SOURCE_PATH
+for f in $publicFiles
+do
+  cp -rf $f $WORK_PATH/template/source/
+done
+
+cd $WORK_PATH
+
+rm -rf $WORK_PATH/template
+
+./ink publish ./template
