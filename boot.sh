@@ -12,6 +12,6 @@ done
 
 cd $WORK_PATH
 
-rm -rf $WORK_PATH/template
+rm -rf $WORK_PATH/template/public
 
 ./ink publish ./template
